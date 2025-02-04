@@ -48,7 +48,7 @@ function playSound(event) {
   // Directement après avoir essayé de récuperer l'audio associée à une touche, on vérifie
   // si on a bien réussi à avoir un audio
   if (!audio) {
-    return; // sinon on ne continue pas la fonction
+    return; 
   }
 
   audio.currentTime = 0; // Remet le son au début
@@ -71,26 +71,6 @@ function triggerRecord() {
 
   startRecordDate = Date.now();
 }
-
-// setTimeout(() => {
-//   console.log("hello au bout de 2 secondes");
-
-// }, 2000)
-
-// setInterval(() => {
-// const newKeyBoardDownEvent = new KeyboardEvent("keydown", { keyCode: 65 });
-
-// const newKeyBoardUpEvent = new KeyboardEvent("keyup", { keyCode: 65 });
-// document.dispatchEvent(newKeyBoardDownEvent);
-
-// setTimeout(() => {
-//   document.dispatchEvent(newKeyBoardUpEvent);
-// }, 300)
-
-// }, 2000);
-
-// const newKeyBoardEvent = new KeyboardEvent("keydown", {keyCode: 65 });
-// document.dispatchEvent(newKeyBoardEvent);
 
 function playRecord() {
   isPlaying = !isPlaying;
@@ -115,10 +95,6 @@ function playRecord() {
 
     
     });
-    // setTimeout(() => {
-    //   document.querySelector(`.key[data-key="80"]`).classList.remove("playing");
   
-    //   }, recordedKeys[recordedKeys.timeCode])
-    
   }
 }
